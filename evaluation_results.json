@@ -1,0 +1,1279 @@
+{
+  "timestamp": "2026-07-25T14:20:14.844374",
+  "model": "us.anthropic.claude-sonnet-4-6",
+  "judge_model": "us.anthropic.claude-sonnet-4-6",
+  "aggregate": {
+    "total_questions": 50,
+    "evaluated": 50,
+    "errors": 0,
+    "overall_scores": {
+      "correctness": 3.68,
+      "completeness": 3.82,
+      "faithfulness": 4.14,
+      "relevance": 4.36,
+      "citation_quality": 4.2,
+      "average": 4.04
+    },
+    "retrieval": {
+      "source_retrieval_rate": 0.689,
+      "avg_top_similarity": 0.7109
+    },
+    "timing": {
+      "avg_retrieval_sec": 0.079,
+      "avg_generation_sec": 3.745,
+      "avg_total_sec": 6.081
+    },
+    "per_category": {
+      "Academics": {
+        "count": 10,
+        "correctness": 3.3,
+        "completeness": 3.4,
+        "faithfulness": 4.0,
+        "relevance": 4.1,
+        "citation_quality": 3.9
+      },
+      "Admissions": {
+        "count": 10,
+        "correctness": 3.5,
+        "completeness": 3.5,
+        "faithfulness": 3.8,
+        "relevance": 4.2,
+        "citation_quality": 4.2
+      },
+      "General": {
+        "count": 10,
+        "correctness": 3.8,
+        "completeness": 3.9,
+        "faithfulness": 4.3,
+        "relevance": 4.5,
+        "citation_quality": 3.9
+      },
+      "Out-of-Domain": {
+        "count": 5,
+        "correctness": 3.8,
+        "completeness": 4.2,
+        "faithfulness": 4.2,
+        "relevance": 3.8,
+        "citation_quality": 4.2
+      },
+      "Student Life": {
+        "count": 7,
+        "correctness": 3.57,
+        "completeness": 3.86,
+        "faithfulness": 4.29,
+        "relevance": 4.57,
+        "citation_quality": 4.43
+      },
+      "Tuition & Aid": {
+        "count": 8,
+        "correctness": 4.25,
+        "completeness": 4.38,
+        "faithfulness": 4.38,
+        "relevance": 4.88,
+        "citation_quality": 4.75
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "ADM-01",
+      "category": "Admissions",
+      "question": "What GPA is required for undergraduate admission?",
+      "expected_answer": "Students with 0-11 hours of college credit must submit an official high school transcript showing a cumulative GPA of at least 2.0 on a 4.0 scale.",
+      "actual_answer": "For general undergraduate admission to the University of the Cumberlands, students with 0-11 hours of college credit must have a cumulative GPA of at least 2.0 on a 4.0 scale. More details on undergraduate admission requirements can be found on the [Admission Requirements](https://www.ucumberlands.edu/admissions/admission-requirements) page.\n\nFor most certificate programs, a minimum undergraduate cumulative GPA of 2.0 is also required, including programs such as the [Business Analytics Certificate](https://www.ucumberlands.edu/academics/certificate/business-analytics-certificate), [Financial Management Certificate](https://www.ucumberlands.edu/academics/certificate/financial-management-certificate), and [Artificial Intelligence Certificate](https://www.ucumberlands.edu/academics/certificate/artificial-intelligence-certificate). One exception is the [Leadership Certificate I](https://www.ucumberlands.edu/academics/certificate/leadership-certificate-i), which requires a minimum GPA of 2.5.",
+      "source_url": "https://www.ucumberlands.edu/admissions/admission-requirements",
+      "source_retrieved": true,
+      "top_similarity": 0.7686,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 4,
+        "citation_quality": 5,
+        "reasoning": "The actual answer correctly states the 2.0 GPA requirement for students with 0-11 credit hours and provides additional relevant GPA information for certificate programs, with valid ucumberlands.edu citations, though the extra certificate program details go slightly beyond what was asked."
+      },
+      "timing": {
+        "retrieval_sec": 0.199,
+        "generation_sec": 3.502,
+        "judge_sec": 2.488,
+        "total_sec": 6.189
+      }
+    },
+    {
+      "id": "ADM-02",
+      "category": "Admissions",
+      "question": "What is the minimum GPA for graduate program admission?",
+      "expected_answer": "Master's degree admission requires a grade point average of at least 2.5 on a 4.0 scale from a bachelor's degree. Doctoral degree admission requires at least 3.0 on a 4.0 scale from the conferred master's degree.",
+      "actual_answer": "The minimum GPA requirement for graduate program admission at University of the Cumberlands varies by program. Academic departments may have their own specific GPA requirements, so it is important to check the details for your intended program.\n\nFor example, the [Online Master of Science in Strategic Marketing](https://www.ucumberlands.edu/academics/graduate/masters-strategic-marketing) and the [Executive Master's in Strategic Marketing](https://www.ucumberlands.edu/academics/executive/masters-strategic-marketing) both require a minimum undergraduate cumulative GPA of 2.5, while the [Master's in Organizational Leadership](https://www.ucumberlands.edu/academics/graduate/masters-organizational-leadership) requires a minimum undergraduate cumulative GPA of 2.0.\n\nOnce enrolled, graduate students must also meet Satisfactory Academic Progress (SAP) standards. This means maintaining a cumulative GPA of at least 2.0 during the first 6 credit hours, and at least a 3.0 after completing 6 or more credit hours. Full details on program-specific admission requirements can be found on the [Admission Requirements](https://www.ucumberlands.edu/admissions/admission-requirements) page.",
+      "source_url": "https://www.ucumberlands.edu/admissions/admission-requirements",
+      "source_retrieved": true,
+      "top_similarity": 0.7478,
+      "scores": {
+        "correctness": 2,
+        "completeness": 2,
+        "faithfulness": 3,
+        "relevance": 3,
+        "citation_quality": 4,
+        "reasoning": "The actual answer misses the key general policy (2.5 GPA for master's admission, 3.0 for doctoral admission) stated in the expected answer, instead providing program-specific examples with inconsistent GPA requirements (including a 2.0 requirement not in the expected answer), and conflates SAP standards with admission requirements."
+      },
+      "timing": {
+        "retrieval_sec": 0.096,
+        "generation_sec": 4.032,
+        "judge_sec": 2.833,
+        "total_sec": 6.962
+      }
+    },
+    {
+      "id": "ADM-03",
+      "category": "Admissions",
+      "question": "What English proficiency tests are accepted for international students?",
+      "expected_answer": "UC accepts TOEFL (minimum 65 internet-based, updating to 4 on new scale in January 2026), IELTS (minimum 6), DuoLingo (minimum 95 for undergrad, 100 for graduate), ACT (minimum 17), and SAT (minimum 920).",
+      "actual_answer": "University of the Cumberlands accepts three English proficiency tests for international students: TOEFL (Test of English as a Foreign Language), IELTS (International English Language Testing System), and the Duolingo English Test. These apply to both undergraduate and graduate applicants who are non-native English speakers.\n\nThe minimum required scores vary by program. For standard undergraduate and graduate admission, the minimum scores are a TOEFL of 65 (which will transition to a score of 4 on a new 1-6 scale on January 21, 2026), an IELTS of 6, and a Duolingo score of 95 for undergraduates or 100 for graduate students. Some specialized programs, such as the [MSPAS](https://www.ucumberlands.edu/academics/graduate-programs/masters-physician-assistant-studies-mspas/wburg) and the [Associate's Degree in Nursing](https://www.ucumberlands.edu/admissions/admission-requirements), require higher scores, specifically a Paper-based TOEFL of 550 or an Internet-based TOEFL of 79.\n\nThe English proficiency requirement is waived for undergraduate students transferring from a U.S. institution, and for graduate students who have completed bachelor's or master's level coursework at an accredited U.S. institution. More details can be found on the [International Students admissions page](https://www.ucumberlands.edu/admissions/international-students).",
+      "source_url": "https://www.ucumberlands.edu/admissions/admission-requirements",
+      "source_retrieved": true,
+      "top_similarity": 0.7147,
+      "scores": {
+        "correctness": 3,
+        "completeness": 3,
+        "faithfulness": 4,
+        "relevance": 5,
+        "citation_quality": 4,
+        "reasoning": "The actual answer correctly covers TOEFL, IELTS, and Duolingo with accurate scores, but omits ACT (minimum 17) and SAT (minimum 920) which are accepted English proficiency tests per the expected answer; it adds extra details about waivers and specialized programs that appear reasonable but weren't in the expected answer."
+      },
+      "timing": {
+        "retrieval_sec": 0.108,
+        "generation_sec": 6.037,
+        "judge_sec": 3.075,
+        "total_sec": 9.219
+      }
+    },
+    {
+      "id": "ADM-04",
+      "category": "Admissions",
+      "question": "How many countries do international students come from at UC?",
+      "expected_answer": "University of the Cumberlands welcomes international students from over 40 countries in both undergraduate and select graduate programs.",
+      "actual_answer": "University of the Cumberlands welcomes international students from over 40 countries. This diverse community is reflected both in campus life and in the university's experience handling international admissions and visa processes.\n\nFor more information about joining this community, you can visit the [International Students](https://www.ucumberlands.edu/admissions/international-students) page or read about what makes UC a welcoming environment for international students on the [UC blog](https://www.ucumberlands.edu/blog/cumberlands-good-school-international-students).",
+      "source_url": "https://www.ucumberlands.edu/admissions/international-students",
+      "source_retrieved": true,
+      "top_similarity": 0.758,
+      "scores": {
+        "correctness": 5,
+        "completeness": 4,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer correctly states 'over 40 countries' matching the expected answer, provides helpful additional context, and includes valid ucumberlands.edu citation links, though it omits the specific mention of undergraduate and select graduate programs."
+      },
+      "timing": {
+        "retrieval_sec": 0.06,
+        "generation_sec": 2.901,
+        "judge_sec": 2.117,
+        "total_sec": 5.078
+      }
+    },
+    {
+      "id": "ADM-05",
+      "category": "Admissions",
+      "question": "What documents do international undergraduate students need for admission?",
+      "expected_answer": "International undergraduates need to complete the Cumberlands application, prepare transcript evaluation and translation, provide English proficiency scores, pay enrollment deposit, complete I-20 request form through UC Global with bank statement showing sufficient funding, and pay the SEVIS I-901 fee.",
+      "actual_answer": "International undergraduate students at the University of the Cumberlands need to prepare several key documents for admission. These include completed application materials through the [Cumberlands application](http://www.ucumberlands.edu/apply), official transcripts with evaluation and translation, and English proficiency scores (such as TOEFL, IELTS, or Duolingo). A valid passport (valid at least six months into the future) is also required.\n\nAfter receiving an admission decision and paying the enrollment deposit, students must complete an I-20 request form through [UC Global](https://ucglobal.ucumberlands.edu/istart/controllers/start/StartEngine.cfm), which requires uploading a bank statement showing sufficient funding for the year. Students with a sponsor must also complete the [Affidavit of Support](https://cumber-my.sharepoint.com/:b:/g/personal/webmaster_ucumberlands_edu/ERhyI3QBslROreWGBkjRu8UBWKckxakaLWbj22xT9sJq8A). The official I-20 can then be requested through [MyEduDocs](https://ucumberlands.myedudocs.com/).\n\nFor the visa process, students will also need their admission letter, evidence of financial support, the [SEVIS fee](https://www.fmjfee.com/i901fee/index.html) receipt, and completed visa application forms. For questions, students may contact the admissions office at admissions@ucumberlands.edu or Courtnie.kirby@ucumberlands.edu for student affairs matters.",
+      "source_url": "https://www.ucumberlands.edu/admissions/international-students",
+      "source_retrieved": true,
+      "top_similarity": 0.746,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer covers all key points from the expected answer including the application, transcript evaluation/translation, English proficiency scores, enrollment deposit, I-20 request form, bank statement, and SEVIS fee, while also providing helpful additional details and proper ucumberlands.edu citations."
+      },
+      "timing": {
+        "retrieval_sec": 0.061,
+        "generation_sec": 9.122,
+        "judge_sec": 2.121,
+        "total_sec": 11.304
+      }
+    },
+    {
+      "id": "ADM-06",
+      "category": "Admissions",
+      "question": "What transcript evaluation services does UC accept?",
+      "expected_answer": "UC accepts evaluations from World Education Services (WES), International Education Research Foundation (IERF), Educational Perspectives (EP), Educational Credential Evaluators (ECE), PLAYNAIA InCRED for student-athletes, and TEC.",
+      "actual_answer": "For international students, the University of the Cumberlands accepts transcript evaluations from the following services:\n\n- [World Education Services](https://www.wes.org/) (WES)\n- [International Education Research Foundation](https://www.ierf.org/) (IERF)\n- [Educational Perspectives](https://www.edperspective.org/) (EP)\n- [Educational Credential Evaluators](https://www.ece.org/) (ECE)\n\nFor undergraduate applicants, [The Evaluation Company](https://app.evalcompany.com/09b0abf2-4a62-4303-8e8e-90b44d7194b3) is also accepted, while graduate applicants may use [SpanTran](https://spanside.secure.force.com/SpantranApplication?Id=09b0abf2-4a62-4303-8e8e-90b44d7194b3). Student-athletes at both levels are encouraged to use [InCRED](https://www.incredevals.org/).\n\nGeneral evaluations typically cost $75-$150, while course-by-course evaluations (required for students transferring from foreign colleges and universities) cost $150-$250. Evaluations based on unofficial transcripts or in-progress coursework are acceptable for admission, but official transcripts with completed course information are required prior to enrollment.",
+      "source_url": "https://www.ucumberlands.edu/admissions/admission-requirements",
+      "source_retrieved": false,
+      "top_similarity": 0.6966,
+      "scores": {
+        "correctness": 3,
+        "completeness": 3,
+        "faithfulness": 2,
+        "relevance": 4,
+        "citation_quality": 4,
+        "reasoning": "The actual answer correctly lists WES, IERF, EP, ECE, and InCRED but replaces TEC with 'The Evaluation Company' and adds SpanTran (not in expected answer), and includes cost estimates ($75-$250) that appear fabricated as they aren't in the expected answer, reducing faithfulness."
+      },
+      "timing": {
+        "retrieval_sec": 0.098,
+        "generation_sec": 4.551,
+        "judge_sec": 2.653,
+        "total_sec": 7.302
+      }
+    },
+    {
+      "id": "ADM-07",
+      "category": "Admissions",
+      "question": "What is the mailing address for graduate admissions at UC?",
+      "expected_answer": "University of the Cumberlands, Graduate Admissions, 6178 College Station Drive, Williamsburg, KY 40769.",
+      "actual_answer": "The mailing address for Graduate & Online Admissions at University of the Cumberlands is:\n\n649 S. 10th Street, Suite C, Williamsburg, KY 40769\n\nYou can also reach the graduate admissions office by phone at 606.539.4390 or toll-free at 855.791.7199, or by email at [gradadm@ucumberlands.edu](mailto:gradadm@ucumberlands.edu). For more details, visit the [Contact Us](https://www.ucumberlands.edu/about/contact-us) page.",
+      "source_url": "https://www.ucumberlands.edu/admissions/admission-requirements",
+      "source_retrieved": false,
+      "top_similarity": 0.7437,
+      "scores": {
+        "correctness": 1,
+        "completeness": 2,
+        "faithfulness": 2,
+        "relevance": 4,
+        "citation_quality": 3,
+        "reasoning": "The actual answer provides a different address (649 S. 10th Street, Suite C) than the expected answer (6178 College Station Drive), making the key factual information incorrect, though it does include relevant contact details and a citation to ucumberlands.edu."
+      },
+      "timing": {
+        "retrieval_sec": 0.114,
+        "generation_sec": 2.313,
+        "judge_sec": 2.186,
+        "total_sec": 4.614
+      }
+    },
+    {
+      "id": "ADM-08",
+      "category": "Admissions",
+      "question": "Can a student who was suspended from a program apply to a new program at UC?",
+      "expected_answer": "No. If a student has been on probation for more than one semester in an unfinished program or has been suspended from a program at UC or any other institution, the student cannot be admitted into a new program at University of the Cumberlands.",
+      "actual_answer": "The context does not contain specific information about whether a suspended student can apply to a new program at the University of the Cumberlands. The available information primarily addresses academic suspension in relation to financial aid eligibility and F-1 immigration status situations.\n\nWhat is available indicates that if a student is on Academic Suspension, they must submit an Academic Appeal through the Registrar's Office before submitting a SAP Appeal to reinstate financial aid. For more details about program eligibility after suspension, you would need to contact the university directly. You can find more information on the [Satisfactory Academic Progress Policy](https://www.ucumberlands.edu/admission-aid/financial-aid-tuition/financial-resources/sap) page or reach out to the appropriate university office for guidance specific to your situation.",
+      "source_url": "https://www.ucumberlands.edu/admissions/admission-requirements",
+      "source_retrieved": false,
+      "top_similarity": 0.6848,
+      "scores": {
+        "correctness": 1,
+        "completeness": 1,
+        "faithfulness": 3,
+        "relevance": 2,
+        "citation_quality": 3,
+        "reasoning": "The chatbot failed to provide the correct answer that a suspended student cannot be admitted into a new program at UC, instead deflecting and providing only tangentially related financial aid information."
+      },
+      "timing": {
+        "retrieval_sec": 0.187,
+        "generation_sec": 4.254,
+        "judge_sec": 1.859,
+        "total_sec": 6.301
+      }
+    },
+    {
+      "id": "ADM-09",
+      "category": "Admissions",
+      "question": "Are high school transcripts required for transfer students with 12+ credits?",
+      "expected_answer": "No. High school transcripts are not required for students who have obtained 12+ hours of college credit after graduating high school.",
+      "actual_answer": "No, high school transcripts are not required for transfer students who have obtained 12 or more hours of college credit after high school graduation. This applies to both on-campus and online admissions at University of the Cumberlands.\n\nHowever, students in this category must submit official college transcripts from all colleges and universities attended, with a cumulative GPA of at least 2.0 on a 4.0 scale. For more details, you can visit the [KCTCS Transfer Partnership page](https://www.ucumberlands.edu/admission-aid/transfer-students/kctcs-transfer-partnership) or the general [Transfer Students page](https://www.ucumberlands.edu/admissions/transfer-students).",
+      "source_url": "https://www.ucumberlands.edu/admissions/admission-requirements",
+      "source_retrieved": false,
+      "top_similarity": 0.7313,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 4,
+        "relevance": 5,
+        "citation_quality": 4,
+        "reasoning": "The answer correctly states that high school transcripts are not required for transfer students with 12+ credits, adds relevant context about GPA requirements and transcript submission, and includes UC domain URLs, though the specific links provided may not be exact official pages."
+      },
+      "timing": {
+        "retrieval_sec": 0.201,
+        "generation_sec": 3.031,
+        "judge_sec": 2.048,
+        "total_sec": 5.281
+      }
+    },
+    {
+      "id": "ADM-10",
+      "category": "Admissions",
+      "question": "What GPA is required for PhD in Counselor Education and Supervision (PhD CES)?",
+      "expected_answer": "The PhD CES program requires a 3.5 GPA for admission, which is higher than the standard 3.0 requirement for other doctoral programs.",
+      "actual_answer": "Applicants to the [Ph.D. in Counselor Education and Supervision](https://www.ucumberlands.edu/academics/graduate/phd-counselor-education-and-supervision) at University of the Cumberlands must have a minimum cumulative GPA of 3.5 on a 4-point scale on all graduate work, as verified by official transcripts. This requirement applies to all prospective students seeking full admission into the program.\n\nIt is worth noting that this standard is higher than the general 3.0 GPA threshold sometimes associated with graduate programs. Full details on all admissions requirements can also be found on the [Admission Requirements page](https://www.ucumberlands.edu/admissions/admission-requirements).",
+      "source_url": "https://www.ucumberlands.edu/admissions/admission-requirements",
+      "source_retrieved": true,
+      "top_similarity": 0.7926,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer correctly states the 3.5 GPA requirement, notes it is higher than the standard 3.0 threshold, and includes relevant ucumberlands.edu citation links."
+      },
+      "timing": {
+        "retrieval_sec": 0.121,
+        "generation_sec": 3.842,
+        "judge_sec": 1.859,
+        "total_sec": 5.821
+      }
+    },
+    {
+      "id": "ACAD-01",
+      "category": "Academics",
+      "question": "How many credit hours is the MSIT program?",
+      "expected_answer": "The online Master of Science in Information Technology requires 31 credit hours.",
+      "actual_answer": "Based on the Executive Master's in Information Technology program page, the MSIT program requires 31 credit hours total, with 30 of those hours comprising the core requirements.\n\nYou can find more details about the program and its curriculum at [Executive Master's in Information Technology](https://www.ucumberlands.edu/academics/executive/masters-information-technology).",
+      "source_url": "https://www.ucumberlands.edu/academics/graduate/masters-information-technology",
+      "source_retrieved": false,
+      "top_similarity": 0.7556,
+      "scores": {
+        "correctness": 4,
+        "completeness": 4,
+        "faithfulness": 3,
+        "relevance": 5,
+        "citation_quality": 4,
+        "reasoning": "The answer correctly states 31 credit hours but introduces a slight inconsistency by saying '30 of those hours comprising the core requirements' which may be inaccurate or confusing; the URL provided is from ucumberlands.edu which is good, though the program is described as 'online Master of Science' not 'Executive Master's'."
+      },
+      "timing": {
+        "retrieval_sec": 0.061,
+        "generation_sec": 1.964,
+        "judge_sec": 2.65,
+        "total_sec": 4.675
+      }
+    },
+    {
+      "id": "ACAD-02",
+      "category": "Academics",
+      "question": "What is the cost per credit hour for the MSIT program?",
+      "expected_answer": "The MSIT program costs $355 per credit hour.",
+      "actual_answer": "The [Online Master's in Information Technology](https://www.ucumberlands.edu/academics/graduate/masters-information-technology) at University of the Cumberlands is priced at **$355 per credit hour**.\n\nIf you are considering the [Executive Master's in Information Technology](https://www.ucumberlands.edu/academics/executive/masters-information-technology), the cost is higher at **$549 per credit hour**. Be sure to consider which format best fits your academic and professional goals when comparing the two options.",
+      "source_url": "https://www.ucumberlands.edu/academics/graduate/masters-information-technology",
+      "source_retrieved": true,
+      "top_similarity": 0.8011,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The answer correctly states $355 per credit hour for the MSIT program, includes relevant additional information about the Executive MSIT, and provides properly formatted ucumberlands.edu citation links."
+      },
+      "timing": {
+        "retrieval_sec": 0.105,
+        "generation_sec": 2.418,
+        "judge_sec": 1.889,
+        "total_sec": 4.412
+      }
+    },
+    {
+      "id": "ACAD-03",
+      "category": "Academics",
+      "question": "What courses are included in the MSIT curriculum?",
+      "expected_answer": "The MSIT curriculum includes ITS 530 - Analyzing and Visualizing Data, ITS 531 - Business Intelligence, ITS 532 - Cloud Computing, and ITS 535 - System Analysis and Design among other courses totaling 31 credit hours.",
+      "actual_answer": "The online Master's in Information Technology (MSIT) at University of the Cumberlands is built around a structured set of core courses combined with elective specialization pathways. Core coursework typically covers software development, business intelligence, cloud computing, data mining and visualization, data communications and networking, database design, organizational leadership and decision-making, systems analysis, and IT strategy.\n\nBeyond the core, students can pursue concentrations in areas such as cybersecurity, data analytics, cloud and infrastructure, software engineering, and product or project leadership. The program also incorporates labs, case studies, and capstone projects designed to help you apply new tools in real-world settings and build a professional portfolio.\n\nFor a full breakdown of the curriculum and available specializations, you can explore more at the [Boost Your Tech Career with an Online Master's in IT](https://www.ucumberlands.edu/blog/online-it-masters-may-advance-your-tech-career) blog post.",
+      "source_url": "https://www.ucumberlands.edu/academics/graduate/masters-information-technology",
+      "source_retrieved": false,
+      "top_similarity": 0.7013,
+      "scores": {
+        "correctness": 2,
+        "completeness": 2,
+        "faithfulness": 2,
+        "relevance": 3,
+        "citation_quality": 2,
+        "reasoning": "The actual answer provides a general overview of MSIT topics but omits the specific course codes and names (ITS 530, ITS 531, ITS 532, ITS 535) and the 31 credit hour total from the expected answer; the citation links to a blog post rather than the official program curriculum page, and some content about concentrations may be hallucinated or extrapolated beyond what UC's official curriculum documents state."
+      },
+      "timing": {
+        "retrieval_sec": 0.058,
+        "generation_sec": 5.355,
+        "judge_sec": 3.059,
+        "total_sec": 8.471
+      }
+    },
+    {
+      "id": "ACAD-04",
+      "category": "Academics",
+      "question": "How long is each course term in the online MSIT program?",
+      "expected_answer": "Each course lasts eight weeks, called a bi-term. There are two bi-terms per semester, and three semesters per year (fall, spring, and summer). Many classes are asynchronous.",
+      "actual_answer": "Each course term in the online Master's in Information Technology program at University of the Cumberlands lasts eight weeks, referred to as a \"bi-term.\" There are two bi-terms per semester, and three semesters per year (fall, spring, and summer), giving students multiple entry points and a flexible pace throughout the year.\n\nMany classes are asynchronous, meaning there is no set login time and you can complete coursework on your own schedule. Additionally, Cumberlands provides free rental textbooks to online students as part of its One Price Promise. You can learn more about the program at the [Online Master's in Information Technology](https://www.ucumberlands.edu/academics/graduate/masters-information-technology) page.",
+      "source_url": "https://www.ucumberlands.edu/academics/graduate/masters-information-technology",
+      "source_retrieved": true,
+      "top_similarity": 0.7785,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer accurately covers all key points from the expected answer (8-week bi-terms, two bi-terms per semester, three semesters per year, asynchronous classes), adds relevant but faithful supplementary information, and includes a valid ucumberlands.edu citation."
+      },
+      "timing": {
+        "retrieval_sec": 0.062,
+        "generation_sec": 2.654,
+        "judge_sec": 3.097,
+        "total_sec": 5.812
+      }
+    },
+    {
+      "id": "ACAD-05",
+      "category": "Academics",
+      "question": "What is the maximum class size for the MSIT program?",
+      "expected_answer": "The maximum class size for the MSIT program is 30 students.",
+      "actual_answer": "The maximum class size for the [Online Master's in Information Technology](https://www.ucumberlands.edu/academics/graduate/masters-information-technology) program at the University of the Cumberlands is 30 students.",
+      "source_url": "https://www.ucumberlands.edu/academics/graduate/masters-information-technology",
+      "source_retrieved": true,
+      "top_similarity": 0.7082,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer correctly states the maximum class size of 30 students and includes a valid ucumberlands.edu citation link."
+      },
+      "timing": {
+        "retrieval_sec": 0.049,
+        "generation_sec": 2.267,
+        "judge_sec": 1.716,
+        "total_sec": 4.032
+      }
+    },
+    {
+      "id": "ACAD-06",
+      "category": "Academics",
+      "question": "Is the MSIT program ranked nationally?",
+      "expected_answer": "Yes, the MSIT program is ranked #1 in the U.S. for Affordable Master's programs.",
+      "actual_answer": "The provided information does not include specific national ranking details for the Master of Science in Information Technology (MSIT) program. The content available focuses on the program's curriculum, accreditation factors, and admission requirements rather than ranking data for that specific degree.\n\nFor the most accurate and up-to-date ranking information on the MSIT program, you may want to visit [University of the Cumberlands' academics page](https://www.ucumberlands.edu/academics) or explore the [blog post on boosting your tech career with an online Master's in IT](https://www.ucumberlands.edu/blog/online-it-masters-may-advance-your-tech-career) for additional details.",
+      "source_url": "https://www.ucumberlands.edu/academics/graduate/masters-information-technology",
+      "source_retrieved": false,
+      "top_similarity": 0.6646,
+      "scores": {
+        "correctness": 1,
+        "completeness": 1,
+        "faithfulness": 4,
+        "relevance": 3,
+        "citation_quality": 3,
+        "reasoning": "The chatbot failed to provide the correct information that the MSIT program is ranked #1 in the U.S. for Affordable Master's programs, instead claiming the information was unavailable, resulting in poor correctness and completeness scores."
+      },
+      "timing": {
+        "retrieval_sec": 0.042,
+        "generation_sec": 2.997,
+        "judge_sec": 1.986,
+        "total_sec": 5.026
+      }
+    },
+    {
+      "id": "ACAD-07",
+      "category": "Academics",
+      "question": "What topics does the MSIT program cover?",
+      "expected_answer": "The MSIT covers cybersecurity, data analytics, IT management and leadership, cloud computing, business intelligence, data mining, systems management, strategic IT planning, and enterprise technology integration.",
+      "actual_answer": "The MSIT program at the University of the Cumberlands is designed to develop well-rounded technical and leadership capabilities. According to Dean of the School of Computer and Information Science Dr. Machica McClain, the program aims to \"develop expertise in data analysis, IT governance, systems management, and strategic leadership \u2014 empowering students to advance professionally and take on high-impact roles in the technology sector.\"\n\nCore coursework typically includes software development, business intelligence, cloud computing, data mining and visualization, data communications and networking, database design, systems analysis, organizational leadership and decision-making, and IT strategy. Students can also pursue specializations in areas such as cybersecurity, data analytics, cloud and infrastructure, and software engineering. You can learn more about the program at the [University of the Cumberlands MSIT blog](https://www.ucumberlands.edu/blog/online-it-masters-may-advance-your-tech-career).\n\nThe program also incorporates emerging technology trends such as advanced machine learning, AI applications, and IoT integration, giving students practical exposure to real-world tools and environments. The online format is designed for working professionals, with part-time pacing options, cohort networking, and hands-on projects that can be applied directly in the workplace.",
+      "source_url": "https://www.ucumberlands.edu/academics/graduate/masters-information-technology",
+      "source_retrieved": false,
+      "top_similarity": 0.7146,
+      "scores": {
+        "correctness": 3,
+        "completeness": 4,
+        "faithfulness": 3,
+        "relevance": 4,
+        "citation_quality": 3,
+        "reasoning": "The actual answer covers most key topics from the expected answer (cybersecurity, data analytics, cloud computing, business intelligence, data mining, systems management, IT planning) and adds some relevant details, but includes potentially fabricated quotes and extra information (AI, IoT, machine learning) not in the expected answer; the citation link appears to be a real UC URL but the quote from 'Dr. Machica McClain' cannot be verified."
+      },
+      "timing": {
+        "retrieval_sec": 0.058,
+        "generation_sec": 4.158,
+        "judge_sec": 2.682,
+        "total_sec": 6.897
+      }
+    },
+    {
+      "id": "ACAD-08",
+      "category": "Academics",
+      "question": "Does UC provide textbooks for online students?",
+      "expected_answer": "Yes, Cumberlands provides free rental textbooks to online students as part of its One Price Promise.",
+      "actual_answer": "Yes, University of the Cumberlands provides free textbooks for all students, including online students, through the [One Price Promise](https://www.ucumberlands.edu/tuition-aid/one-price-promise-textbook-program) initiative. Cumberlands partners with Barnes & Noble to provide all course materials, including textbooks, free of charge. Students have access to materials on the first day of class, and most course materials are delivered in a digital format.\n\nAt the end of the semester, students can return their textbooks or purchase them directly from Barnes & Noble if they wish to keep them. If you have questions about your books, you can [contact the bookstore](mailto:bookstore@ucumberlands.edu) directly. Students also have the option to opt out of the digital textbook program if they prefer.",
+      "source_url": "https://www.ucumberlands.edu/academics/graduate/masters-information-technology",
+      "source_retrieved": false,
+      "top_similarity": 0.7539,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer correctly confirms free textbooks for online students via the One Price Promise, provides additional accurate details about the Barnes & Noble partnership, digital format delivery, return/purchase options, and includes a valid ucumberlands.edu citation link."
+      },
+      "timing": {
+        "retrieval_sec": 0.055,
+        "generation_sec": 3.283,
+        "judge_sec": 3.02,
+        "total_sec": 6.358
+      }
+    },
+    {
+      "id": "ACAD-09",
+      "category": "Academics",
+      "question": "What format is the MSIT delivered in?",
+      "expected_answer": "The MSIT is a 100% online program. Classes are asynchronous, meaning there is no set login time and students can work on schoolwork whenever they find time.",
+      "actual_answer": "The Master's in Information Technology at University of the Cumberlands is offered in two formats: an [Online Master's in Information Technology](https://www.ucumberlands.edu/academics/graduate/masters-information-technology) and an [Executive Master's in Information Technology](https://www.ucumberlands.edu/academics/executive/masters-information-technology).\n\nBoth formats share the same core coursework, though they differ slightly in total hours \u2014 the online format requires 31 hours while the executive format requires 30 hours for core requirements. Executive format students also have an applied learning component (internship or practicum) that is an integral part of the curriculum, requiring enrollment in INTR every term. Online students must complete ITS 699 as their capstone, while executive format students may substitute INTR 599 in its place.",
+      "source_url": "https://www.ucumberlands.edu/academics/graduate/masters-information-technology",
+      "source_retrieved": true,
+      "top_similarity": 0.6117,
+      "scores": {
+        "correctness": 2,
+        "completeness": 2,
+        "faithfulness": 4,
+        "relevance": 3,
+        "citation_quality": 4,
+        "reasoning": "The actual answer mentions two formats but fails to specify that the online program is 100% asynchronous with no set login time, which is the key detail in the expected answer; it also introduces executive format details not asked about."
+      },
+      "timing": {
+        "retrieval_sec": 0.058,
+        "generation_sec": 3.674,
+        "judge_sec": 2.257,
+        "total_sec": 5.989
+      }
+    },
+    {
+      "id": "ACAD-10",
+      "category": "Academics",
+      "question": "What is the average financial aid for the MSIT program?",
+      "expected_answer": "The average financial aid for the MSIT program is $10,400 (reported as $10.4K).",
+      "actual_answer": "The specific average financial aid figure for the Master's in Information Technology (MSIT) program is not available. The online MSIT program is priced at [$355 per credit hour](https://www.ucumberlands.edu/academics/graduate/masters-information-technology), but no average financial aid amount is listed for that specific program.\n\nFor more details on financial aid options available to you, it would be best to contact the University of the Cumberlands directly or explore general graduate funding options by filing the [FAFSA](https://studentaid.gov/understand-aid/types/loans/subsidized-unsubsidized), which can unlock federal loans and other aid opportunities.",
+      "source_url": "https://www.ucumberlands.edu/academics/graduate/masters-information-technology",
+      "source_retrieved": true,
+      "top_similarity": 0.7427,
+      "scores": {
+        "correctness": 1,
+        "completeness": 1,
+        "faithfulness": 4,
+        "relevance": 3,
+        "citation_quality": 3,
+        "reasoning": "The chatbot failed to provide the correct average financial aid figure of $10,400 for the MSIT program, instead claiming the information was unavailable, resulting in low correctness and completeness scores."
+      },
+      "timing": {
+        "retrieval_sec": 0.064,
+        "generation_sec": 3.316,
+        "judge_sec": 2.05,
+        "total_sec": 5.43
+      }
+    },
+    {
+      "id": "FIN-01",
+      "category": "Tuition & Aid",
+      "question": "What is the undergraduate on-campus tuition at UC?",
+      "expected_answer": "The undergraduate on-campus One Price Promise is $19,175 or less. Without housing it is $9,875. This includes parking, fees, academic resources, dining, housing, laundry, counseling, student health, books, library access, and technology fees.",
+      "actual_answer": "The undergraduate on-campus tuition at University of the Cumberlands is $9,875 per year for full-time students (both Kentucky residents and non-residents pay the same rate). For part-time students, the rate is $335 per credit hour. Room and board is an additional $9,300 per year.\n\nIt is worth noting that the university charges a block tuition rate for on-campus undergraduate students. The approximate credit hour rate of $329.17 applies when considering the price per credit hour for full-time students taking 30 credit hours annually. You can view the full tuition breakdown at the [UC Tuition page](https://www.ucumberlands.edu/tuition-aid/tuition).",
+      "source_url": "https://www.ucumberlands.edu/tuition-aid/tuition",
+      "source_retrieved": true,
+      "top_similarity": 0.7073,
+      "scores": {
+        "correctness": 3,
+        "completeness": 3,
+        "faithfulness": 3,
+        "relevance": 4,
+        "citation_quality": 4,
+        "reasoning": "The actual answer correctly identifies the $9,875 tuition figure but misses the One Price Promise concept of $19,175 which includes housing, dining, and other services; it lists room and board as $9,300 separately rather than explaining the bundled One Price Promise, and omits the comprehensive list of included services."
+      },
+      "timing": {
+        "retrieval_sec": 0.058,
+        "generation_sec": 3.122,
+        "judge_sec": 2.532,
+        "total_sec": 5.712
+      }
+    },
+    {
+      "id": "FIN-02",
+      "category": "Tuition & Aid",
+      "question": "What is the tuition per credit hour for online undergraduate programs?",
+      "expected_answer": "The online undergraduate tuition is $220 per credit hour under the One Price Promise, which includes technology fees, academic resources, library access, counseling services, fees, and books.",
+      "actual_answer": "Online undergraduate programs at University of the Cumberlands cost $220 per credit hour. For students taking a full 15-hour course load, this works out to $3,300 per semester, or $6,600 per year, with no additional fees.\n\nYou can find more details on the [Online Experience](https://www.ucumberlands.edu/student-life/online-experience) page or review the [Tuition](https://www.ucumberlands.edu/tuition-aid/tuition) page for a full breakdown of program costs.",
+      "source_url": "https://www.ucumberlands.edu/tuition-aid/tuition",
+      "source_retrieved": true,
+      "top_similarity": 0.7815,
+      "scores": {
+        "correctness": 4,
+        "completeness": 3,
+        "faithfulness": 4,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The $220 per credit hour figure is correct, but the answer omits the 'One Price Promise' branding and the inclusive benefits (technology fees, books, counseling, library access), though it does mention no additional fees; citation links to ucumberlands.edu are provided."
+      },
+      "timing": {
+        "retrieval_sec": 0.055,
+        "generation_sec": 2.439,
+        "judge_sec": 2.304,
+        "total_sec": 4.798
+      }
+    },
+    {
+      "id": "FIN-03",
+      "category": "Tuition & Aid",
+      "question": "What is the graduate tuition per credit hour?",
+      "expected_answer": "The graduate tuition is $355 per credit hour on average under the One Price Promise.",
+      "actual_answer": "The graduate tuition per credit hour at University of the Cumberlands varies by program. The Online Master's in Information Technology is priced at $355 per credit hour. Graduate Doctoral programs in Business and Information Technology are $549 per credit hour, while EdD and Leadership doctoral programs are $415 per credit hour. Graduate Nursing (Family Nurse Practitioner) is $539 per credit hour, and Graduate Masters Education programs are $315 per credit hour.\n\nFor Executive Programs, Master's level courses (including certificates) are $549 per credit hour, and Doctoral level courses (including certificates) are $749 per credit hour. Students at the Off-Campus Instructional Site in India pay $600 per credit hour for Master's Programs.\n\nFor a full breakdown of all tuition costs, you can visit the [Tuition page](https://www.ucumberlands.edu/tuition-aid/tuition) or review the [Cost of Attendance](https://www.ucumberlands.edu/tuition-aid/tuition/cost-attendance) details.",
+      "source_url": "https://www.ucumberlands.edu/tuition-aid/tuition",
+      "source_retrieved": true,
+      "top_similarity": 0.7541,
+      "scores": {
+        "correctness": 3,
+        "completeness": 4,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer provides detailed program-specific tuition rates which are accurate and more comprehensive than the expected answer's simplified average, but doesn't explicitly mention the 'One Price Promise' concept that the expected answer references as context for the $355 figure."
+      },
+      "timing": {
+        "retrieval_sec": 0.057,
+        "generation_sec": 4.329,
+        "judge_sec": 2.205,
+        "total_sec": 6.592
+      }
+    },
+    {
+      "id": "FIN-04",
+      "category": "Tuition & Aid",
+      "question": "What is included in the One Price Promise?",
+      "expected_answer": "The One Price Promise includes everything: tuition, books, parking, fees, academic resources, dining, housing, laundry, counseling services, student health, library access, and technology fees. No hidden fees or extra costs.",
+      "actual_answer": "The [One Price Promise](https://www.ucumberlands.edu/tuition-aid/one-price-promise-textbook-program) at University of the Cumberlands is a comprehensive tuition model that includes everything students need to succeed with no hidden fees or extra costs. For online and graduate students, the package covers tuition, textbooks, tutoring, and other academic services. All required books, lab manuals, access codes, and digital textbook resources are provided at no additional charge, with course materials delivered before the first day of class.\n\nFor on-campus undergraduate students, the package goes even further, including textbooks, housing, dining, parking, tutoring, career services, and counseling. The total cost for residential students is $19,175, while commuting students pay $9,875 for the same package minus room and board. All students are automatically enrolled in the textbook program, and while digital textbooks are the standard format, physical copies can be requested for a rental fee if available for a given course.\n\nThe One Price Promise is part of the broader [Cumberlands Commitment](https://www.ucumberlands.edu/news/cumberlands-introduces-new-one-price-promise-tuition-model-everything-students-need-succeed-now), which represents the university's pledge to provide an affordable, accessible education to all students.",
+      "source_url": "https://www.ucumberlands.edu/tuition-aid/tuition",
+      "source_retrieved": false,
+      "top_similarity": 0.7956,
+      "scores": {
+        "correctness": 4,
+        "completeness": 5,
+        "faithfulness": 4,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer covers all key elements from the expected answer (tuition, books, parking, fees, housing, dining, counseling, etc.) and provides additional helpful details, with valid ucumberlands.edu citation links, though it omits explicit mention of laundry, library access, technology fees, and student health as separate line items."
+      },
+      "timing": {
+        "retrieval_sec": 0.051,
+        "generation_sec": 4.664,
+        "judge_sec": 2.367,
+        "total_sec": 7.082
+      }
+    },
+    {
+      "id": "FIN-05",
+      "category": "Tuition & Aid",
+      "question": "How do I apply for financial aid at UC?",
+      "expected_answer": "Students should complete the FAFSA (Free Application for Federal Student Aid) at studentaid.gov. If circumstances change, students can complete the Financial Assistance Form to have their aid offer reevaluated.",
+      "actual_answer": "To apply for financial aid at University of the Cumberlands, the first step is to complete the [Free Application for Federal Student Aid (FAFSA)](https://studentaid.gov/h/apply-for-aid/fafsa) at [www.fafsa.gov](http://www.fafsa.gov/). You will need to create an FSA ID and password, then complete the form with your personal and family financial information to determine your eligibility for federal, state, and institutional aid. Be sure to use Cumberlands' FAFSA School Code: 001962.\n\nIt is strongly recommended to complete the FAFSA as soon as possible when it opens in December, as some types of financial aid are awarded on a first-come, first-served basis. If you face any challenges gathering the required information, such as parental details, you should reach out to your Enrollment Counselor for guidance.\n\nFor additional assistance, UC offers a Student Financial Center that you can visit, call, or email, as well as a [Financial Assistance Form](https://www.ucumberlands.edu/financial-aid-assistance-appeal) if your circumstances change and you need your aid offer reevaluated. More information is available at the [UC Financial Aid page](https://www.ucumberlands.edu/admissions/undergraduate/financial-aid).",
+      "source_url": "https://www.ucumberlands.edu/tuition-aid/financial-resources",
+      "source_retrieved": true,
+      "top_similarity": 0.7502,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 4,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer covers all key points from the expected answer (FAFSA at studentaid.gov and Financial Assistance Form for reevaluation), adds helpful details like the school code and FSA ID info that appear UC-specific, and includes multiple valid ucumberlands.edu citations; minor concern is that some specific details like the December opening date and 'first-come, first-served' claim cannot be fully verified but are plausible."
+      },
+      "timing": {
+        "retrieval_sec": 0.058,
+        "generation_sec": 4.636,
+        "judge_sec": 3.026,
+        "total_sec": 7.72
+      }
+    },
+    {
+      "id": "FIN-06",
+      "category": "Tuition & Aid",
+      "question": "When was UC founded and what is its mission regarding affordability?",
+      "expected_answer": "Since its founding in 1888, it's been Cumberlands' mission to serve the underserved and provide the financial resources students need. They aim to make UC affordable for every situation.",
+      "actual_answer": "UC was founded in 1888, and its mission since then has been to serve the underserved and provide the financial resources students need. As stated on the [Financial Resources](https://www.ucumberlands.edu/tuition-aid/financial-resources) page, every family's income is different, and it is UC's mission to make the university affordable for every situation.\n\nTo support that mission, UC has taken several concrete steps over the years. In 2019, the university cut its tuition in half, and it has since been recognized by Money magazine as the [most affordable institution in Kentucky](https://www.ucumberlands.edu/news/money-magazine-highlights-cumberlands-affordability). Published data from the Association of Independent Kentucky Colleges and Universities also confirms that UC offers the lowest tuition rates among regionally accredited private universities in the state.",
+      "source_url": "https://www.ucumberlands.edu/tuition-aid/financial-resources",
+      "source_retrieved": true,
+      "top_similarity": 0.7137,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer accurately covers the founding year (1888), the mission regarding affordability, and adds well-sourced additional context with proper ucumberlands.edu citations."
+      },
+      "timing": {
+        "retrieval_sec": 0.055,
+        "generation_sec": 3.356,
+        "judge_sec": 2.05,
+        "total_sec": 5.462
+      }
+    },
+    {
+      "id": "FIN-07",
+      "category": "Tuition & Aid",
+      "question": "What circumstances qualify for financial aid reevaluation?",
+      "expected_answer": "Circumstances that may qualify include personal or family loss of income, change in employment status, or other situations that have impacted financial security. Students must provide documentation to support their appeal.",
+      "actual_answer": "For a financial aid reevaluation through the [Financial Assistance Form](https://www.ucumberlands.edu/financial-aid-assistance-appeal), qualifying circumstances include a personal or family loss of income, change in employment status, or other situations that have negatively impacted your financial security. You must provide documentation to support your appeal, and each request is reviewed by the Office of Financial Aid on an individual basis.\n\nFor a SAP (Satisfactory Academic Progress) appeal specifically, acceptable circumstances include the death of a relative, an injury or illness of the student, and other special circumstances. However, certain circumstances cannot be used in a SAP appeal, including need for financial aid, work-related issues, problems with web-based classes, and improper advising. Full details on acceptable and unacceptable circumstances can be found on the [SAP Appeal page](https://www.ucumberlands.edu/admission-aid/financial-aid-tuition/financial-resources/sap).\n\nIf you need assistance with a financial aid reevaluation for the 2023-2024 academic year, you can contact the Student Financial Center directly at studentfinancial@ucumberlands.edu.",
+      "source_url": "https://www.ucumberlands.edu/tuition-aid/financial-resources",
+      "source_retrieved": true,
+      "top_similarity": 0.6557,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer fully covers the expected answer's key points and adds valuable additional context about SAP appeals, includes proper ucumberlands.edu citation links, and provides accurate contact information."
+      },
+      "timing": {
+        "retrieval_sec": 0.063,
+        "generation_sec": 4.873,
+        "judge_sec": 2.844,
+        "total_sec": 7.78
+      }
+    },
+    {
+      "id": "FIN-08",
+      "category": "Tuition & Aid",
+      "question": "Does UC offer external scholarships?",
+      "expected_answer": "Yes, UC facilitates external scholarships which are private funded scholarships given to students by private donors, organizations, foundations and other outside sources. Recipients are chosen by the external agency and funds are distributed through the university.",
+      "actual_answer": "Yes, University of the Cumberlands does work with external scholarships. These are privately funded scholarships given to students by private donors, organizations, foundations, and other outside sources. Scholarship recipients are chosen by the external agency, and once the funds are received, they are distributed to the student by the university.\n\nIf you receive an external scholarship, you must notify the school to have it directed to your student account. Funds can be mailed to the Office of Student Accounts at 6178 College Station Drive, Williamsburg, KY 40769. Be sure to include your Student ID number and the award period with the scholarship funds. For questions, you can reach out to [financialaid@ucumberlands.edu](https://www.ucumberlands.edu/tuition-aid/types-financial-aid/scholarships).\n\nIt is important to note that UC does not endorse or certify the legality of any external scholarship and cannot guarantee the accuracy of external scholarship information. You are strongly advised to verify all scholarship details, deadlines, and eligibility requirements, and to be cautious of scams that charge fees or request sensitive personal information.",
+      "source_url": "https://www.ucumberlands.edu/tuition-aid/financial-resources",
+      "source_retrieved": true,
+      "top_similarity": 0.7699,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 4,
+        "reasoning": "The actual answer correctly and completely covers the expected answer's key points about external scholarships, adds useful procedural details about how to notify the school and submit funds, includes a relevant email/link from ucumberlands.edu, though the citation format is slightly informal."
+      },
+      "timing": {
+        "retrieval_sec": 0.406,
+        "generation_sec": 4.363,
+        "judge_sec": 2.253,
+        "total_sec": 7.022
+      }
+    },
+    {
+      "id": "LIFE-01",
+      "category": "Student Life",
+      "question": "How many clubs and organizations does UC have?",
+      "expected_answer": "UC offers 29 different clubs and organizations for students to find their community.",
+      "actual_answer": "The exact total number of clubs and organizations at University of the Cumberlands is not specified. However, the university offers a wide range of options spanning athletics, academics, creative arts, faith, leadership, and technology. Students can explore what is available on the [Clubs & Organizations page](https://www.ucumberlands.edu/student-life/clubs-organizations).\n\nIt is also worth noting that if a student does not find a club that fits their interests, they can work with Student Services to start their own organization.",
+      "source_url": "https://www.ucumberlands.edu/student-life",
+      "source_retrieved": true,
+      "top_similarity": 0.7108,
+      "scores": {
+        "correctness": 1,
+        "completeness": 2,
+        "faithfulness": 4,
+        "relevance": 4,
+        "citation_quality": 4,
+        "reasoning": "The chatbot failed to provide the specific number (29) of clubs and organizations, which is the key factual detail in the expected answer, though it did provide a relevant link and useful additional context."
+      },
+      "timing": {
+        "retrieval_sec": 0.049,
+        "generation_sec": 2.682,
+        "judge_sec": 2.132,
+        "total_sec": 4.863
+      }
+    },
+    {
+      "id": "LIFE-02",
+      "category": "Student Life",
+      "question": "What intramural sports are available at UC?",
+      "expected_answer": "Students can enjoy intramural sports like flag football and basketball, or try outdoor activities like hiking.",
+      "actual_answer": "University of the Cumberlands offers a wide range of intramural sports and recreational activities for students, faculty, and staff. Core offerings include flag football, 3-on-3 and 5-on-5 basketball, volleyball, sand volleyball, cornhole, spikeball, ping pong, powerlifting, and ultimate Frisbee. There is also a unique battleship activity held in the pool. Each semester, students are also provided a trip for hiking and rock climbing.\n\nThe intramural program is designed to meet both recreational and competitive needs, and the student body can even request additional sports or activities beyond the core offerings. For more information on specific sports, you can visit the [Clubs & Organizations page](https://www.ucumberlands.edu/student-life/clubs-organizations) or contact Josh Hatfield, Director of Intramurals, at Josh.hatfield@ucumberlands.edu.",
+      "source_url": "https://www.ucumberlands.edu/student-life",
+      "source_retrieved": true,
+      "top_similarity": 0.7564,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 4,
+        "relevance": 5,
+        "citation_quality": 3,
+        "reasoning": "The actual answer correctly includes the expected sports (flag football, basketball, hiking) and provides much more detail; the citation links to a UC page but it's the clubs page rather than a dedicated intramurals page, and the email address cannot be fully verified but appears plausible."
+      },
+      "timing": {
+        "retrieval_sec": 0.046,
+        "generation_sec": 3.435,
+        "judge_sec": 2.555,
+        "total_sec": 6.036
+      }
+    },
+    {
+      "id": "LIFE-03",
+      "category": "Student Life",
+      "question": "What ministries are available for students?",
+      "expected_answer": "Students can engage with various ministries including Appalachian Ministries and Fellowship of Christian Athletes.",
+      "actual_answer": "The Office of Campus Ministries at University of the Cumberlands offers students a variety of ways to get involved and grow in their faith. The ministry is divided into four teams: Appalachian Ministries, Evangelism and Discipleship Ministries, Sports Ministries, and Serve Teams. Each team provides opportunities for students to connect with like-minded peers, build lasting friendships, and deepen their sense of belonging on campus.\n\nBeyond these teams, Campus Ministries also hosts worship services, prayer gatherings, fellowship activities, and special outreach events on campus. Students can also participate in mission trips and volunteer opportunities that foster personal growth and a heart for serving others. The overall mission of Campus Ministries is to encourage every follower of Christ to live out the Great Commission.\n\nFor more information, you can visit the [Student Ministries page](https://www.ucumberlands.edu/student-life/student-ministries) or read about [finding community through campus ministries](https://www.ucumberlands.edu/blog/finding-community-through-campus-ministries).",
+      "source_url": "https://www.ucumberlands.edu/student-life",
+      "source_retrieved": true,
+      "top_similarity": 0.7414,
+      "scores": {
+        "correctness": 3,
+        "completeness": 4,
+        "faithfulness": 4,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer mentions Appalachian Ministries and Sports Ministries (which aligns with Fellowship of Christian Athletes concept), but uses different team names than the expected answer; it provides additional valid details about campus ministry activities and includes proper ucumberlands.edu citations."
+      },
+      "timing": {
+        "retrieval_sec": 0.119,
+        "generation_sec": 3.984,
+        "judge_sec": 2.352,
+        "total_sec": 6.456
+      }
+    },
+    {
+      "id": "LIFE-04",
+      "category": "Student Life",
+      "question": "What sections does Student Life at UC include?",
+      "expected_answer": "Student Life includes Campus Guide, Clubs & Organizations, Community Service, Student Ministries, Civic Responsibility, Online Experience, Career Development, and Student Services.",
+      "actual_answer": "Based on the available information, the Student Life section at University of the Cumberlands includes several key areas. These include a [Campus/Residential Guide](https://www.ucumberlands.edu/student-life/residential-guide), [Online Experience](https://www.ucumberlands.edu/student-life/online-experience), [Career Development](https://www.ucumberlands.edu/student-life/career-development), and [Student Services](https://www.ucumberlands.edu/student-life/student-services).\n\nAdditionally, students can explore [Clubs and Organizations](https://www.ucumberlands.edu/student-life/clubs-organizations), [Student Ministries](https://www.ucumberlands.edu/student-life/student-ministries), and resources related to health and wellness, including [free counseling services](https://www.ucumberlands.edu/student-life/student-services/health-wellness/counseling-services). These sections are designed to support students both academically and personally throughout their time at UC.",
+      "source_url": "https://www.ucumberlands.edu/student-life",
+      "source_retrieved": true,
+      "top_similarity": 0.6994,
+      "scores": {
+        "correctness": 4,
+        "completeness": 4,
+        "faithfulness": 4,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer covers most key sections (Campus Guide, Online Experience, Career Development, Student Services, Clubs & Organizations, Student Ministries) but misses Community Service and Civic Responsibility while adding health/wellness details not in the expected answer; citations are from ucumberlands.edu."
+      },
+      "timing": {
+        "retrieval_sec": 0.057,
+        "generation_sec": 3.316,
+        "judge_sec": 2.178,
+        "total_sec": 5.551
+      }
+    },
+    {
+      "id": "LIFE-05",
+      "category": "Student Life",
+      "question": "Does UC support online students with a campus experience?",
+      "expected_answer": "Yes, UC provides a fully online experience with courses accessible anytime, anywhere, designed for busy schedules.",
+      "actual_answer": "University of the Cumberlands is designed to offer an accessible and flexible education where online students can still feel connected. The university describes its [online experience](https://www.ucumberlands.edu/student-life/online-experience) as providing the same quality education from wherever you are, with programs that are 100 percent online and among the most affordable in the country.\n\nOnline students are supported by a range of services, including [academic advising](https://www.ucumberlands.edu/academics/academic-advising-assistance), tutoring and writing help, [tech support](https://www.ucumberlands.edu/student-life/student-services/information-technology-services), [career services](https://www.ucumberlands.edu/student-life/career-development), and [mental health support](https://www.ucumberlands.edu/student-life/student-services/health-wellness). With approximately 7,500 undergraduate students studying online, Student Success Coordinators are available to assist every step of the way, ensuring students do not navigate their academic journey alone.",
+      "source_url": "https://www.ucumberlands.edu/student-life",
+      "source_retrieved": true,
+      "top_similarity": 0.721,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer accurately confirms UC supports online students with a campus-like experience, provides extensive detail about specific support services, includes multiple valid ucumberlands.edu citations, and directly addresses the question with accurate information."
+      },
+      "timing": {
+        "retrieval_sec": 0.064,
+        "generation_sec": 4.581,
+        "judge_sec": 2.089,
+        "total_sec": 6.734
+      }
+    },
+    {
+      "id": "LIFE-06",
+      "category": "Student Life",
+      "question": "What is UC's approach to campus community?",
+      "expected_answer": "UC describes itself as a campus where students can be themselves. Whether athletic, artistic, or original, they value the individuality of students and aim to make campus feel like home.",
+      "actual_answer": "University of the Cumberlands takes a multifaceted approach to building campus community, encouraging students to get involved through clubs, organizations, intramural sports, and weekly campus events. Students are advised to pursue their passions without overbooking themselves, and to invest deeply in a few meaningful organizations rather than spreading themselves too thin. More details on getting involved can be found on the [Building Community on Campus](https://www.ucumberlands.edu/blog/building-community-campus) blog.\n\nFaith and service are also central to UC's community culture. Through [UC Engage](https://www.ucumberlands.edu/student-life/community-service/uc-engage) and [Student Ministries](https://www.ucumberlands.edu/student-life/student-ministries), students are encouraged to serve their local community and the broader Appalachian region, fostering empathy, leadership, and critical thinking. UC Engage is even a graduation requirement for full-time undergraduate students with less than senior standing, reflecting how seriously the university integrates community engagement into the college experience.",
+      "source_url": "https://www.ucumberlands.edu/student-life",
+      "source_retrieved": true,
+      "top_similarity": 0.693,
+      "scores": {
+        "correctness": 2,
+        "completeness": 2,
+        "faithfulness": 4,
+        "relevance": 3,
+        "citation_quality": 4,
+        "reasoning": "The actual answer provides detailed information about clubs, organizations, faith, and service but misses the core expected answer about UC valuing student individuality and making campus feel like home; it answers a different aspect of 'campus community' than what was expected."
+      },
+      "timing": {
+        "retrieval_sec": 0.051,
+        "generation_sec": 4.262,
+        "judge_sec": 2.141,
+        "total_sec": 6.454
+      }
+    },
+    {
+      "id": "LIFE-07",
+      "category": "Student Life",
+      "question": "Does UC offer career development services?",
+      "expected_answer": "Yes, UC offers Career Development as part of Student Life, including workforce training, job search resources, and work study programs.",
+      "actual_answer": "Yes, University of the Cumberlands offers comprehensive career development services through the [Center for Career Development & Experiential Learning](https://www.ucumberlands.edu/student-life/career-development). These services are included with your tuition and cover career exploration, job searches, resume writing, and interview preparation. Support is available to current students, alumni, on-campus learners, and online students alike.\n\nThe center also provides access to additional career resources such as the [Focus Career Assessment](https://www.focus2career.com/Portal/Login.cfm?SID=589), [O*Net Resource Center](https://www.onetcenter.org/), and [My Plan](https://www.myplan.com/majors/what-to-do-with-a-major.php). Employers can post job listings through the Handshake platform, and students can connect with UC alumni for mentoring and career guidance through the Cumberlands Connect network. For more information, you can contact the center directly at [606.539.4475](tel:6065394475) or at career.services@ucumberlands.edu.",
+      "source_url": "https://www.ucumberlands.edu/student-life",
+      "source_retrieved": true,
+      "top_similarity": 0.7465,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer confirms UC offers career development services, covers all key points from the expected answer (workforce training, job search resources), and goes further with specific details about resources, contact information, and proper ucumberlands.edu citations."
+      },
+      "timing": {
+        "retrieval_sec": 0.055,
+        "generation_sec": 3.77,
+        "judge_sec": 1.901,
+        "total_sec": 5.725
+      }
+    },
+    {
+      "id": "GEN-01",
+      "category": "General",
+      "question": "Who is the president of University of the Cumberlands?",
+      "expected_answer": "Dr. Quentin Young is the University President of the University of the Cumberlands.",
+      "actual_answer": "Dr. Quentin Young serves as the president of the University of the Cumberlands, becoming the 11th president in the university's history. He succeeded [Dr. Larry L. Cockrum](https://www.ucumberlands.edu/directory/dr-larry-l-cockrum), who now holds the title of President Emeritus.\n\nDr. Young holds multiple degrees from the University of the Cumberlands, including a Ph.D. in Information Technology and an M.S. in Information Systems Security. Prior to his role at Cumberlands, he gained professional experience in banking, accounting, and real estate with the Forcht Group of Kentucky. More details about his appointment can be found in the [official announcement](https://www.ucumberlands.edu/news/university-cumberlands-welcomes-dr-quentin-young-its-next-president).",
+      "source_url": "https://www.ucumberlands.edu/about",
+      "source_retrieved": true,
+      "top_similarity": 0.8092,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer correctly identifies Dr. Quentin Young as president, provides additional accurate details about his background and role, and includes valid ucumberlands.edu citations."
+      },
+      "timing": {
+        "retrieval_sec": 0.071,
+        "generation_sec": 5.398,
+        "judge_sec": 1.706,
+        "total_sec": 7.174
+      }
+    },
+    {
+      "id": "GEN-02",
+      "category": "General",
+      "question": "What is UC's mission statement?",
+      "expected_answer": "UC's mission is to provide a quality, affordable education to students from all backgrounds through broad-based academics. The institution is grounded in Christian principles and leadership through service.",
+      "actual_answer": "The mission of University of the Cumberlands is to provide a quality, affordable education to students from all backgrounds through broad-based academics. The institution is grounded in Christian principles and leadership through service.\n\nYou can learn more about the university on the [About page](https://www.ucumberlands.edu/about).",
+      "source_url": "https://www.ucumberlands.edu/about",
+      "source_retrieved": true,
+      "top_similarity": 0.7058,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer perfectly matches the expected answer with identical content, and includes a valid ucumberlands.edu citation link."
+      },
+      "timing": {
+        "retrieval_sec": 0.053,
+        "generation_sec": 2.92,
+        "judge_sec": 1.837,
+        "total_sec": 4.81
+      }
+    },
+    {
+      "id": "GEN-03",
+      "category": "General",
+      "question": "What year was UC founded?",
+      "expected_answer": "University of the Cumberlands was founded in 1888.",
+      "actual_answer": "Based on the available information, [University of the Cumberlands](https://www.ucumberlands.edu/) was founded in 1888.",
+      "source_url": "https://www.ucumberlands.edu/tuition-aid/financial-resources",
+      "source_retrieved": true,
+      "top_similarity": 0.6528,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 4,
+        "reasoning": "The answer correctly states 1888 as the founding year and includes a link to ucumberlands.edu, though it links to the homepage rather than a specific page about the university's history."
+      },
+      "timing": {
+        "retrieval_sec": 0.041,
+        "generation_sec": 1.189,
+        "judge_sec": 2.046,
+        "total_sec": 3.277
+      }
+    },
+    {
+      "id": "GEN-04",
+      "category": "General",
+      "question": "What does UC mean by 'putting students first'?",
+      "expected_answer": "UC provides every student with their own success coordinator for a personalized experience. They foster leadership through service, innovate constantly, cut tuition by 57% for accessibility, and have no hidden fees.",
+      "actual_answer": "At University of the Cumberlands, \"putting students first\" means taking concrete, tangible actions to make education more accessible and personalized. This includes providing every student with their own success coordinator to ensure a personalized and rewarding experience, as well as cutting tuition by 57% to make an excellent undergraduate education more affordable. The university also commits to transparency, offering what they describe as \"no hidden fees, no secret handshake, no fine print.\"\n\nBeyond affordability, putting students first means continuously innovating to better serve student needs \u2014 whether that involves expanding [online, graduate, and executive offerings](https://www.ucumberlands.edu/academics) or bringing education to students \"where and when they need it.\" UC also supports students through comprehensive [student services](https://www.ucumberlands.edu/student-life/student-services), covering everything from academic advising to wellness resources, ensuring students have the tools to succeed both academically and personally.",
+      "source_url": "https://www.ucumberlands.edu/about",
+      "source_retrieved": true,
+      "top_similarity": 0.7407,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 4,
+        "reasoning": "The actual answer covers all key points from the expected answer (success coordinator, 57% tuition cut, no hidden fees, innovation) and adds relevant supporting details with proper ucumberlands.edu citations."
+      },
+      "timing": {
+        "retrieval_sec": 0.065,
+        "generation_sec": 4.042,
+        "judge_sec": 1.83,
+        "total_sec": 5.937
+      }
+    },
+    {
+      "id": "GEN-05",
+      "category": "General",
+      "question": "What are the three pillars of the Cumberlands Commitment?",
+      "expected_answer": "The Cumberlands Commitment has three pillars: Affordable (One Price Promise with no hidden fees), Supported (investing in student success), and Distinctive (preparing students for next steps after graduation).",
+      "actual_answer": "The available information describes the Cumberlands Commitment as a promise to put students' needs first by providing an outstanding, affordable education, and notes that it was launched in 2018 as a college accessibility initiative. However, the specific three pillars of the Cumberlands Commitment are not detailed in the available information.\n\nFor a full breakdown of the commitment's pillars, you can visit the [About page](https://www.ucumberlands.edu/about) or the [University of the Cumberlands homepage](https://www.ucumberlands.edu) for more details.",
+      "source_url": "https://www.ucumberlands.edu/about",
+      "source_retrieved": true,
+      "top_similarity": 0.7341,
+      "scores": {
+        "correctness": 1,
+        "completeness": 1,
+        "faithfulness": 4,
+        "relevance": 3,
+        "citation_quality": 3,
+        "reasoning": "The chatbot failed to provide the three pillars (Affordable, Supported, Distinctive) that constitute the correct answer, instead acknowledging it lacks the information while providing valid UC links."
+      },
+      "timing": {
+        "retrieval_sec": 0.061,
+        "generation_sec": 2.607,
+        "judge_sec": 2.047,
+        "total_sec": 4.715
+      }
+    },
+    {
+      "id": "GEN-06",
+      "category": "General",
+      "question": "What is UC's campus size and location?",
+      "expected_answer": "The University of the Cumberlands is located in Williamsburg, Kentucky, in the heart of Appalachia.",
+      "actual_answer": "University of the Cumberlands is located in Williamsburg, Kentucky. The campus is notably compact, allowing students to walk to virtually any location on campus within 10 minutes.\n\nThe university describes itself as an institution of regional distinction, offering a close-knit, community-focused environment that [feels like home](https://www.youtube.com/watch?v=veNb5JtcRLE). You can learn more about the campus experience through their [campus highlight](https://www.instagram.com/stories/highlights/17902782103882724/) and at [ucumberlands.edu](http://www.ucumberlands.edu/).",
+      "source_url": "https://www.ucumberlands.edu/about",
+      "source_retrieved": false,
+      "top_similarity": 0.6376,
+      "scores": {
+        "correctness": 4,
+        "completeness": 4,
+        "faithfulness": 3,
+        "relevance": 5,
+        "citation_quality": 3,
+        "reasoning": "The answer correctly identifies Williamsburg, Kentucky but omits the 'heart of Appalachia' detail; the '10-minute walk' claim may be accurate but isn't verifiable from the expected answer, and the YouTube/Instagram links are not from ucumberlands.edu."
+      },
+      "timing": {
+        "retrieval_sec": 0.064,
+        "generation_sec": 3.107,
+        "judge_sec": 2.25,
+        "total_sec": 5.421
+      }
+    },
+    {
+      "id": "GEN-07",
+      "category": "General",
+      "question": "Does UC have a religious affiliation?",
+      "expected_answer": "Yes, UC is grounded in Christian principles and values. The institution emphasizes leadership through service and fosters a community of faith.",
+      "actual_answer": "Yes, University of the Cumberlands is grounded in Christian principles and leadership. The university strives to consistently put faith into action, demonstrated through humble service to the local community and the Appalachian region, inspired by the model of servant leadership found in Christ.\n\nUC offers numerous ways for students to engage with their faith, including campus ministry opportunities such as Appalachian Ministries, worship band, Fellowship of Christian Athletes, and Mountain Outreach. There are also faith-based academic programs available, including a [Missions & Ministry bachelor's degree](https://www.ucumberlands.edu/academics/undergraduate/missions-ministry), a [pre-seminary undergraduate degree](https://www.ucumberlands.edu/academics/undergraduate/pre-seminary), and an online [Master of Arts in Christian Studies](https://www.ucumberlands.edu/academics/graduate/master-arts-christian-studies). More information about student ministries can be found at [ucumberlands.edu/student-life/student-ministries](https://www.ucumberlands.edu/student-life/student-ministries).",
+      "source_url": "https://www.ucumberlands.edu/about",
+      "source_retrieved": false,
+      "top_similarity": 0.6887,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer accurately confirms UC's Christian affiliation, expands helpfully on related programs and activities, and includes valid ucumberlands.edu citations."
+      },
+      "timing": {
+        "retrieval_sec": 0.053,
+        "generation_sec": 3.941,
+        "judge_sec": 1.945,
+        "total_sec": 5.94
+      }
+    },
+    {
+      "id": "GEN-08",
+      "category": "General",
+      "question": "How has UC addressed tuition affordability?",
+      "expected_answer": "UC cut tuition by 57% and introduced the One Price Promise to make education accessible. The One Price Promise eliminates hidden fees and includes books, parking, technology fees, and other services.",
+      "actual_answer": "University of the Cumberlands has taken several concrete steps to make tuition more affordable. In 2019, the university implemented a cut-in-half tuition, making it one of the most affordable institutions in Kentucky according to Money magazine. The school also introduced the Cumberlands Commitment program, which promises that no student would pay more than $4,000 per year to attend. You can learn more about these initiatives at [Financial Aid & Tuition](https://www.ucumberlands.edu/tuition-aid).\n\nBeyond reduced tuition, UC offers a \"One Price Promise\" that provides every student, regardless of degree level or location, with access to free textbooks and other academic essentials. Additional financial support comes in the form of need- and merit-based scholarships, work-study opportunities, and flexible [payment plans](https://www.ucumberlands.edu/admission-aid/financial-aid-tuition/applying-aid/financial-aid-faqs) that allow students to pay tuition in installments rather than a lump sum. These combined efforts have allowed students like Koral Hadac ('25) to graduate completely debt free, stating that UC's commitment to lowering costs \"completely changed the trajectory of my life.\"",
+      "source_url": "https://www.ucumberlands.edu/about",
+      "source_retrieved": false,
+      "top_similarity": 0.7254,
+      "scores": {
+        "correctness": 2,
+        "completeness": 3,
+        "faithfulness": 2,
+        "relevance": 4,
+        "citation_quality": 3,
+        "reasoning": "The actual answer mentions the One Price Promise correctly but states an incorrect 'cut-in-half' tuition figure (actual was 57% cut) and introduces unverifiable claims like the 'Cumberlands Commitment' ($4,000/year promise) and a specific student quote that cannot be verified from UC's official documents."
+      },
+      "timing": {
+        "retrieval_sec": 0.055,
+        "generation_sec": 5.272,
+        "judge_sec": 2.661,
+        "total_sec": 7.989
+      }
+    },
+    {
+      "id": "GEN-09",
+      "category": "General",
+      "question": "What support does UC provide each student?",
+      "expected_answer": "Every student at UC gets their own success coordinator who provides personalized guidance and support throughout their academic journey.",
+      "actual_answer": "University of the Cumberlands provides a wide range of support for students across academic, financial, personal, and technical areas. Academically, students have access to the [Learning Commons](https://www.ucumberlands.edu/academics/academic-advising-assistance/learning-commons) for tutoring, the [Graduate Writing Center](https://www.ucumberlands.edu/academics/academic-advising-assistance/learning-commons) for writing assistance, and [academic advising](https://www.ucumberlands.edu/academics/academic-advising-assistance) to guide course selection and planning. Each student is also assigned a dedicated success coordinator upon admission who assists with registration, answers questions, and connects students to other university departments throughout their degree.\n\nOn the financial side, UC offers a student financial center, a financial assistance form, and the [One Price Promise](https://www.ucumberlands.edu/admission-aid/financial-aid-tuition/one-price-promise-textbook-program), which eliminates separate textbook costs and hidden fees. Career planning is also supported through [Career Services](https://www.ucumberlands.edu/student-life/career-development), which is available to both on-campus and online learners.\n\nBeyond academics and finances, UC supports student well-being through [counseling services](https://www.ucumberlands.edu/student-life/student-services/health-wellness/counseling-services), [health and wellness resources](https://www.ucumberlands.edu/student-life/student-services/health-wellness), and [clubs and organizations](https://www.ucumberlands.edu/student-life/clubs-organizations) to encourage community. Technical support, including tools like Grammarly, Microsoft Office, and IT assistance, is also available to help students succeed in their coursework. A full overview of [student services](https://www.ucumberlands.edu/student-life/student-services) can be found on the UC website.",
+      "source_url": "https://www.ucumberlands.edu/about",
+      "source_retrieved": false,
+      "top_similarity": 0.7331,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The actual answer correctly includes the key fact about dedicated success coordinators and goes well beyond the expected answer with comprehensive, well-cited information about additional support services, all linking to ucumberlands.edu URLs."
+      },
+      "timing": {
+        "retrieval_sec": 0.043,
+        "generation_sec": 6.407,
+        "judge_sec": 2.052,
+        "total_sec": 8.501
+      }
+    },
+    {
+      "id": "GEN-10",
+      "category": "General",
+      "question": "What does UC's 'Distinctive' commitment mean?",
+      "expected_answer": "The Distinctive commitment means UC prepares students for the next step after graduation \u2014 whether that's a career, graduate school, or other goals. They focus on real-world readiness.",
+      "actual_answer": "The available information describes the Cumberlands Commitment as a promise to provide an outstanding education that is affordable, accessible, supported, and distinctive, but does not go into specific detail about what the \"Distinctive\" aspect of that commitment entails.\n\nFor more information, you may want to visit the [University of the Cumberlands website](https://www.ucumberlands.edu) directly or reach out to admissions at admissions@ucumberlands.edu for a full explanation of what each pillar of the Cumberlands Commitment means.",
+      "source_url": "https://www.ucumberlands.edu/about",
+      "source_retrieved": true,
+      "top_similarity": 0.6723,
+      "scores": {
+        "correctness": 1,
+        "completeness": 1,
+        "faithfulness": 4,
+        "relevance": 3,
+        "citation_quality": 2,
+        "reasoning": "The actual answer fails to provide the specific meaning of the 'Distinctive' commitment (real-world readiness, preparing students for careers/grad school), instead just acknowledging it exists as one of four pillars without explaining it."
+      },
+      "timing": {
+        "retrieval_sec": 0.056,
+        "generation_sec": 2.91,
+        "judge_sec": 2.16,
+        "total_sec": 5.126
+      }
+    },
+    {
+      "id": "OOD-01",
+      "category": "Out-of-Domain",
+      "question": "What is the weather forecast for Tokyo this week?",
+      "expected_answer": "REFUSE - This question is unrelated to UC Cumberlands.",
+      "actual_answer": "Weather forecasts for Tokyo are outside the scope of what I can help with. University of the Cumberlands' resources do not include that type of information.\n\nIf you have questions about UC programs, campus safety, residency weekends, or other university-related topics, I am happy to help.",
+      "source_url": null,
+      "source_retrieved": false,
+      "top_similarity": 0.4964,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The chatbot appropriately refused to answer an out-of-domain question about Tokyo weather and redirected the user to UC-related topics."
+      },
+      "timing": {
+        "retrieval_sec": 0.058,
+        "generation_sec": 1.878,
+        "judge_sec": 1.612,
+        "total_sec": 3.549
+      }
+    },
+    {
+      "id": "OOD-02",
+      "category": "Out-of-Domain",
+      "question": "Can you help me write a cover letter for a job at Google?",
+      "expected_answer": "REFUSE - This question is unrelated to UC Cumberlands.",
+      "actual_answer": "Writing cover letters falls outside what I can assist with here, as that would require using knowledge beyond what is available to me in this context.\n\nWhat I can share is that [University of the Cumberlands](https://www.ucumberlands.edu/blog/landing-your-first-job-tips-new-grads) strongly recommends custom-tailoring your cover letter to every single job you apply for, and submitting one regardless of whether it is formally required. Your cover letter should communicate your relevant potential to the prospective employer.\n\nFor personalized guidance on crafting a strong cover letter, reaching out to the University of the Cumberlands career center would be a worthwhile step. You might also find the [Resume and Interview Do's and Don'ts](https://www.ucumberlands.edu/blog/resume-and-interview-dos-and-donts) resource helpful as a starting point.",
+      "source_url": null,
+      "source_retrieved": false,
+      "top_similarity": 0.5789,
+      "scores": {
+        "correctness": 2,
+        "completeness": 3,
+        "faithfulness": 3,
+        "relevance": 2,
+        "citation_quality": 3,
+        "reasoning": "The chatbot partially refused but then provided UC-related career advice with citations instead of fully refusing; it's tangentially related UC content rather than a clean refusal as expected."
+      },
+      "timing": {
+        "retrieval_sec": 0.054,
+        "generation_sec": 4.781,
+        "judge_sec": 2.464,
+        "total_sec": 7.3
+      }
+    },
+    {
+      "id": "OOD-03",
+      "category": "Out-of-Domain",
+      "question": "What is the capital of France?",
+      "expected_answer": "REFUSE - This question is unrelated to UC Cumberlands.",
+      "actual_answer": "The provided information does not include details about the capital of France beyond mentioning Paris as a city students can visit while studying abroad. For example, students in the France program may venture to Paris during their stay, and one study abroad itinerary includes stops such as [the Louvre, Versailles, and Notre Dame](https://www.ucumberlands.edu/news/four-cumberlands-students-awarded-1000-scholarships-spring-study-abroad-london-paris-and-costa-rica).\n\nFor general geography questions like this, I would recommend consulting an outside resource, as that falls outside the scope of what I can assist with here.",
+      "source_url": null,
+      "source_retrieved": false,
+      "top_similarity": 0.5656,
+      "scores": {
+        "correctness": 2,
+        "completeness": 3,
+        "faithfulness": 3,
+        "relevance": 2,
+        "citation_quality": 3,
+        "reasoning": "The chatbot partially deflected but also provided tangentially related UC content about study abroad programs mentioning Paris, rather than cleanly refusing the out-of-domain question."
+      },
+      "timing": {
+        "retrieval_sec": 0.059,
+        "generation_sec": 3.729,
+        "judge_sec": 1.84,
+        "total_sec": 5.627
+      }
+    },
+    {
+      "id": "OOD-04",
+      "category": "Out-of-Domain",
+      "question": "Explain the theory of relativity.",
+      "expected_answer": "REFUSE - This question is unrelated to UC Cumberlands.",
+      "actual_answer": "The theory of relativity is not a topic covered in the available information about University of the Cumberlands programs. The available information only covers details about physics-related degree programs, course requirements, and curriculum at the university.\n\nIf you have questions about the Physics, Physics Education, or Applied Physics programs at University of the Cumberlands, I would be happy to help. You can also explore the programs directly at [Physics](https://www.ucumberlands.edu/academics/undergraduate/physics), [Physics Education](https://www.ucumberlands.edu/academics/undergraduate/physics-education), or [Applied Physics](https://www.ucumberlands.edu/academics/undergraduate/applied-physics).",
+      "source_url": null,
+      "source_retrieved": false,
+      "top_similarity": 0.5973,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The chatbot appropriately refused to explain the theory of relativity, redirected to relevant UC Cumberlands physics programs, and provided valid ucumberlands.edu URLs."
+      },
+      "timing": {
+        "retrieval_sec": 0.06,
+        "generation_sec": 2.867,
+        "judge_sec": 1.781,
+        "total_sec": 4.708
+      }
+    },
+    {
+      "id": "OOD-05",
+      "category": "Out-of-Domain",
+      "question": "What are the best restaurants near Harvard University?",
+      "expected_answer": "REFUSE - This question is unrelated to UC Cumberlands.",
+      "actual_answer": "The available information only covers dining options at University of the Cumberlands in Williamsburg, Kentucky. There is no information available regarding restaurants near Harvard University.\n\nIf you have questions about dining at University of the Cumberlands, options include the T.J. Roberts Dining Hall buffet, Pete's Eats, Chick-fil-A, Haba\u00f1eros, and two coffee shops. More details can be found on the [Dining on Campus](https://www.ucumberlands.edu/student-life/residential-guide/dining-campus) page.",
+      "source_url": null,
+      "source_retrieved": false,
+      "top_similarity": 0.5956,
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "relevance": 5,
+        "citation_quality": 5,
+        "reasoning": "The chatbot appropriately refused to answer the out-of-domain question about Harvard restaurants, redirected to UC Cumberlands dining information, and provided a valid ucumberlands.edu citation."
+      },
+      "timing": {
+        "retrieval_sec": 0.062,
+        "generation_sec": 2.703,
+        "judge_sec": 2.05,
+        "total_sec": 4.815
+      }
+    }
+  ]
+}
