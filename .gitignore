@@ -1,0 +1,27 @@
+# Environment & secrets
+.env
+*.env
+
+# Scraped data (too large for git)
+scraped_data/
+chroma_data/
+
+# Logs
+*.log
+scraper.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
