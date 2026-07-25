@@ -12,9 +12,9 @@ ucumberlands.edu ─→ Scraper ─→ Chunker ─→ Bedrock Embeddings ─→ 
 
 | Component | Description |
 |-----------|-------------|
-| `scraper.py` | Sitemap-based web scraper (2,063 pages) |
+| `scraper.py` | Sitemap-based web scraper (2,445+ pages) |
 | `ingest.py` | Chunking + embedding pipeline into ChromaDB |
-| `chatbot.py` | RAG chatbot using AWS Bedrock (coming soon) |
+| `chatbot.py` | Streamlit RAG chatbot using AWS Bedrock Claude |
 
 ## Tech Stack
 
@@ -43,13 +43,13 @@ python scraper.py
 chroma run --path ./chroma_data --port 8000 &
 python ingest.py
 
-# 5. Run the chatbot (coming soon)
-python chatbot.py
+# 5. Run the chatbot
+streamlit run chatbot.py --server.headless true
 ```
 
 ## Data Pipeline
 
-1. **Scrape**: Fetches all 2,063 pages from ucumberlands.edu sitemap
+1. **Scrape**: Fetches 2,445+ pages from ucumberlands.edu (sitemap + crawled extras)
 2. **Chunk**: Splits pages into sections by headings (300-1500 chars each)
 3. **Embed**: Generates 1024-dim vectors via Bedrock Titan
 4. **Store**: Persists in ChromaDB with hierarchical metadata (category > path > title > section + URL)

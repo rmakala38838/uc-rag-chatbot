@@ -2,9 +2,13 @@
 .env
 *.env
 
-# Scraped data (too large for git)
+# Data (too large for git)
 scraped_data/
+markdown_data/
 chroma_data/
+
+# Temp files
+~$*
 
 # Logs
 *.log
